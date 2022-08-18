@@ -3,7 +3,7 @@ import Row from './Row';
 
 export default function Checkers() {
 
-    const [rowNumber, setRowNumber] = useState()
+    const [rowNumber] = useState([8,7,6,5,4,3,2,1])
 
     return (
         <table className='no-border'>
@@ -22,7 +22,7 @@ export default function Checkers() {
                 </tr>
             </thead>
             <tbody>
-                {[8, 7, 6, 5, 4, 3, 2, 1].map(number => <Row key={number.toString()} number={number} />)}
+                {rowNumber.map(number => <Row key={number.toString()} number={number} />)}
             </tbody>
             <tfoot>
                 <tr>
@@ -36,7 +36,7 @@ export default function Checkers() {
                     <th>g</th>
                     <th>h</th>
                     <th></th>
-                </tr>
+                    </tr>
             </tfoot>
         </table>
     );

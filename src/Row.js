@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Row() {
+export default function Row(props) {
     const isEven = props.number % 2 === 0
 
     return (
