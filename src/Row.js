@@ -1,4 +1,6 @@
-function Row(props) {
+import React from "react"
+
+export default function Row() {
     const isEven = props.number % 2 === 0
 
     return (
@@ -18,4 +20,3 @@ function Row(props) {
     )
 }
 
-export default Row
