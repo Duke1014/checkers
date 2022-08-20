@@ -1,10 +1,18 @@
+body {
+  margin: 40px;
+}
 .no-border {
   border-collapse: collapse;
 }
 
 .square {
   width: 100px;
-  height: 100px;
+  height: 100px;  
+  /* background-color: #444; */
+  /* color: #fff; */
+  /* border-radius: 5px; */
+  /* padding: 20px; */
+  /* font-size: 150%; */
 }
 
 .light {
@@ -15,10 +23,11 @@
   background-color: #D18B47;
 }
 
-.wrapper {
+.checker-board {
   display: grid;
   grid-template-columns: 100px 100px 100px;
-  grid-gap: 10px;
+  grid-gap: 5px;
   background-color: #fff;
   color: #444;
 }
+
