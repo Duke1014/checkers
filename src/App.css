@@ -14,3 +14,11 @@
 .dark {
   background-color: #D18B47;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
