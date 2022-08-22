@@ -8,7 +8,7 @@ export default function Checkers() {
     return (
         <div className='checker-board'>
             {board.map((n) => {
-                return <Square key={n}/>
+                return <Square key={n} id={n}/>
             })}
         </div>
     );
